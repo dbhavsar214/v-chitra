@@ -16,6 +16,7 @@ export const validateLoginForm = async (loginFormData: loginFormValues) => {
     try {
         await loginFormSchema.validate(loginFormData, { abortEarly: false });
         return null;
+        //comment added
     }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     catch (err: any) {
